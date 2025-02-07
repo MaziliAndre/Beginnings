@@ -12,6 +12,7 @@ public class Main {
 		d = sc.nextInt();
 		diferenca = (a * b - c * d);
 		System.out.println("DIFERENÇA = " + diferenca);
+                sc.close();
 
 	}
 
