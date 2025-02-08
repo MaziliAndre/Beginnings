@@ -1,0 +1,31 @@
+package novo_teste;
+
+import java.util.Scanner;
+import java.util.Random;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		Random rd = new Random();
+		System.out.println("Selecione o número de tentativas!");
+		int K = sc.nextInt();
+		int y = rd.nextInt(10)+1;
+		System.out.println("Adivinhe o Número!");
+		int x = sc.nextInt();
+		
+		for (int i = 0; i < K ; i++) {
+			if (x > y) System.out.println("O número escolhido é menor que o número digitado");
+			else if (x < y) System.out.println("O número escolhido é maior que o número digitado");
+			else if (x == y) { System.out.println("Parabéns! Você acertou!");
+			break;
+			}
+			x = sc.nextInt();
+			}
+		System.out.println("GAME OVER");
+		sc.close();
+		
+	}
+
+}
