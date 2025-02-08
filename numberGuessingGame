@@ -15,7 +15,7 @@ public class Main {
 		System.out.println("Adivinhe o Número!");
 		int x = sc.nextInt();
 		if (x == y) System.out.println("Parabéns! Você acertou!");
-		else for (int i = 0; i < K ; i++) {
+		else for (int i = 0; i < K - 1 ; i++) {
 			if (x > y) System.out.println("O número escolhido é menor que o número digitado");
 			else if (x < y) System.out.println("O número escolhido é maior que o número digitado");
 			else if (x == y) { System.out.println("Parabéns! Você acertou!");
